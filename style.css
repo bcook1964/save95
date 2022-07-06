@@ -50,7 +50,7 @@ button {
 
 header {
   display: flex;
-  width: 100%;
+  width: 90%;
   height: 12vh;
   margin: auto;
   background: white;
@@ -70,7 +70,7 @@ header {
 
 .logo {
   height: auto;
-  width: 100%;
+  width: 70%;
   margin-top: 13px;
   padding-bottom: 10px;
   cursor: pointer;
