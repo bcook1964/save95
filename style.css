@@ -41,6 +41,7 @@ body {
   width: 300px;
   float: left;
   margin: 50px;
+  padding-right: 100px;
 }
 
 button {
@@ -69,7 +70,7 @@ header {
 }
 
 .logo {
-  width: 47%;
+  width: 60%;
   margin-top: 13px;
   padding-bottom: 10px;
   cursor: pointer;
@@ -180,8 +181,8 @@ nav, ul, li a:hover {
   }
 }
 
-@media only screen and (min-width: 1600vw) {
+@media only screen and (max-width: 1920px) {
   .logo {
-    width: 60%;
+    width: 47%;
   }
 }
