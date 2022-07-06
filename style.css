@@ -41,7 +41,7 @@ body {
   width: 300px;
   float: left;
   margin: 50px;
-  padding-right: 100px;
+  padding-right: 500px;
 }
 
 button {
@@ -189,6 +189,10 @@ nav, ul, li a:hover {
 
   .logo {
     width: 47%;
+  }
+
+  .column2 {
+    padding-right: 100px;
   }
 
   header {
