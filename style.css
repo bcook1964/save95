@@ -64,8 +64,8 @@ header {
   min-height: 100vh;
   margin-top: 13px;
   padding-bottom: 10px;
-  padding-left: 8%;
-  padding-right: 8%;
+  padding-left: 0%;
+  padding-right: 0%;
   overflow: hidden;
 }
 
@@ -183,6 +183,12 @@ nav, ul, li a:hover {
 }
 
 @media only screen and (max-width: 1600px) {
+
+  .logo-container {
+    padding-left: 8%;
+    padding-right: 8%;
+  }
+
   .logo {
     width: 47%;
   }
