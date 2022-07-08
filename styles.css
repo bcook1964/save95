@@ -1,0 +1,343 @@
+/* CSS Reset */
+body, div, dl, dt, dd, ul, ol, li, h1, h2, h3, h4, h5, h6, pre, form, fieldset, input, p, blockquote, th, td {
+    margin: 0;
+    padding: 0;
+}
+
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+fieldset, img {
+    border: 0;
+}
+
+ul {
+    list-style: none;
+    list-style-position: outside;
+}
+
+a {
+    outline: none;
+}
+
+/* Tell Old Browsers to Read HTML5 Elements */
+header, footer, aside, nav, article {
+    display: block;
+}
+
+/* Essentials */
+body {
+    background: white;
+    color: #666666;
+    font-family: "Poppins", sans-serif;
+    font-size: 16px;
+}
+
+p {
+    line-height: 150%;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: "Poppins", sans-serif;
+    font-weight: lighter; /* Counteract Strong Browser Anti-aliasing*/
+}
+
+a:link, a:visited {
+    color: #00A0DD;
+    text-decoration: none;
+}
+
+.wrapper {
+    width: 960px;
+    margin: 0 auto;
+}
+
+/* Header */
+header {
+    height: 80px;
+}
+
+/* Logo */
+h1.logo_head a {
+    display: block;
+    width: 221px;
+    height: 50px;
+    float: left;
+    margin: 20px 0 0 10px;
+    text-indent: -5000px;
+}
+
+.logo {
+    width: 16%;
+    float: left;
+    margin-right: -600px;
+    margin-top: 13px;
+    margin-bottom: 10px;
+    cursor: pointer;
+    /* IE Support */
+    cursor: hand;
+}
+
+/* Main Navigation */
+header ul {
+    float: right;
+    margin: 35px 0;
+}
+
+header li {
+    display: inline-block;
+    width: 120px;
+    height: 36px;
+    margin: 0 10px 0 0;
+}
+
+header li.home {
+    margin-right: -4px;
+}
+
+header li a {
+    display: block;
+    width: 100px;
+    height: 36px;
+    text-align: center;
+    font-size: 18px;
+    font-weight: bold;
+    line-height: 36px;
+}
+
+header li a:hover, a.active {
+    color: #0C4C91;
+}
+
+/* Main Feature */
+.home_feature {
+    background: url(./Images/20191127190639-shutterstock-431848417-crop.jpeg);
+    box-shadow: inset 0 0 0 2000px rgba(0,0,0,0.6);
+    background-position: 15% 75%;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
+    align-items: center;
+    text-align: center;
+    min-height: 50vh;
+    display: flex;
+    margin: auto;
+    width: 100%;
+}
+
+.feature_text h1, .feature_text p {
+    color: white;
+    font-weight: 500;
+    text-align: center;
+}
+
+.feature_text h1 {
+    font-size: 40px;
+}
+
+.feature_text p {
+    margin-top: 15px;
+    font-size: 20px
+}
+
+.home_feature button {
+    margin-top: 30px;
+}
+
+.cta_select#go {
+    transition: all 0.1s linear 0s;
+    padding: 10px 10px 10px 10px;
+    border: 2px solid #0C4C91;
+    background: #00A0DD;
+    border-radius: 4px;
+    font-size: 17px;
+    color: white;
+    width: 150px;
+    height: 50px;
+    cursor: pointer;
+    /* IE Support */
+    cursor: hand;
+}
+
+.cta_select#go:hover {
+    transition: all 0.1s linear 0s;
+    background-color: #0C4C91;
+    border-radius: 4px;
+}
+
+/* Service Examples Blurb */
+article.services_blurb {
+    clear: both;
+    float: left;
+    width: 620px;
+    margin: 85px 10px;
+}
+
+.paylo_logo {
+    float: left;
+    margin: 0 10px 0 0;
+    width: 50%;
+}
+
+article.services_blurb h1 {
+    font-size: 25px;
+    color: #168fad;
+    margin: 5px 0;
+}
+
+article.services_blurb p {
+    margin: 5px 20px 20px 0px;
+}
+
+article.paylo_testimony {
+    float: right;
+    width: 300px;
+    margin: 50px 10px;
+}
+
+/* Paylo Company Testimony */
+.testimony_wrapper {
+    border: 1px solid #CDE0E4;
+    width: 298px;
+    height: 317px;
+}
+
+p.testimony {
+    text-align: center;
+    background: #FFFFFF;
+    color: #5E8C92;
+    font-style: italic;
+    height: 55px;
+    border-radius: 5px;
+    padding: 30px 20px;
+}
+
+p.testimony_name {
+    background: #E7F4F6;
+    margin-top: 172px;
+    height: 30px;
+    line-height: 30px;
+    font-weight: bold;
+    text-align: center;
+    color: #5E8C92;
+}
+
+/* Footer */
+footer {
+    clear: both;
+    height: 250px;
+    background: #CDE0E4;
+    color: #5E8C92;
+}
+
+footer h4 {
+    font-size: 25px;
+    color: #2C5F66;
+    margin: 0 0 10px 0;
+    clear: both;
+}
+
+/* Widgets */
+article.widget_social {
+    padding: 20px 0 0 0;
+    z-index: 2;
+    width: 100%;
+    margin: 20px 0;
+    display: block;
+}
+
+article.widget_feedback {
+    margin-top: -104px;
+    width: 50%;
+    float: right;
+}
+
+footer input[type=text], footer textarea {
+    width: 200px;
+    height: 20px;
+    border: none;
+    color: #FFFFFF;
+    border-radius: 5px;
+    padding: 5px 10px;
+    margin: 10px 0;
+    background: #46737B;
+    text-shadow: 0 1px 0 #0F2326;
+}
+
+footer input[type=text]:focus, footer textarea:focus {
+    outline: none;
+}
+
+footer textarea {
+    height: 53px;
+}
+
+footer input[type=submit] {
+    background: #DFF0F3;
+    margin: 10px 0 0 0;
+    display: block;
+    width: 100px;
+    padding: 0 10px 10px 10px;
+    height: 30px;
+    text-align: center;
+    line-height: 28px;
+    border: 1px solid #ADC0C4;
+    font-size: 12px;
+    cursor: pointer;
+    /* IE Support */
+    cursor: hand;
+
+}
+
+footer input[type=submit]:hover {
+    background: #FFFFFF;
+}
+
+footer input[type=submit]:active {
+    background: #EFEFEF;
+}
+
+/* Social Links */
+article.widget_social ul li {
+    display: inline;
+    width: 200px;
+    height: 50px;
+    margin: 0 10px 0 0;
+    cursor: pointer;
+}
+
+article.widget_social ul li img.youtube {
+    width: 30px;
+}
+
+article.widget_social ul li img.facebook {
+    float: left;
+    width: 29px
+}
+
+/* Copyright */
+.copyright {
+    padding: 40px 0 0 50px;
+    margin-left: -20px;
+    width: 40%;
+}
+.article p.copyright_notice {
+    padding: 20px 0 0 0;
+    display: inline;
+    clear: both;
+}
+
+.footer_logo {
+    margin-left: -84px;
+    float: left;
+    width: 200px;
+    height: 65px;
+}
+
+@media only screen and (max-width: 1600px) {
+    .wrapper {
+        width: 1100px;
+    }
+}
