@@ -289,7 +289,7 @@ p.testimony_name {
     color: #FFFFFF;
 }
 
-@media screen and (min-device-width: 1200px) and (max-device-width: 1600px) {
+@media screen and (min-device-width: 1200px) and (max-device-width: 1900px) {
     .email img {
         width: 7%;
     }
