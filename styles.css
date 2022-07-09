@@ -216,22 +216,11 @@ p.testimony {
 }
 
 p.testimony_name {
-    background: #E7F4F6;
+    background: #5E8C92;
     margin-top: 172px;
     height: 30px;
     line-height: 30px;
     font-weight: bold;
     text-align: center;
-    color: #5E8C92;
-}
-
-
-@media only screen and (min-width: 1600px) {
-    article.services_blurb {
-        width: 800px;
-    }
-
-    article.paylo_testimony {
-        width: 500px;
-    }
+    color: #FFFFFF;
 }
