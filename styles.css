@@ -80,7 +80,7 @@ nav {
 }
 
 .left > div + div {
-    margin-right: 250px;
+    margin-left: 40px;
 }
 
 .right > div {
@@ -101,13 +101,13 @@ span {
 .email img {
     padding-left: 20px;
     width: 10%;
-    margin-bottom: -7px;
+    margin-bottom: -6px;
 }
 
 .call img {
-    margin-left: 20px;
+    margin-left: -35px;
     width: 4.3%;
-    margin-bottom: -8px;
+    margin-bottom: -7px;
 }
 
 
@@ -287,4 +287,23 @@ p.testimony_name {
     font-weight: bold;
     text-align: center;
     color: #FFFFFF;
+}
+
+@media screen and (min-device-width: 1200px) and (max-device-width: 1600px) {
+    .email img {
+        width: 7%;
+    }
+
+    .call img {
+        width: 3.2%;
+        margin-left: -85px;
+    }
+
+    .facebook_navbar img {
+        width: 28%;
+    }
+
+    .youtube_navbar img {
+        width: 34%;
+    }
 }
