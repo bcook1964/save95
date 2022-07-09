@@ -224,3 +224,14 @@ p.testimony_name {
     text-align: center;
     color: #5E8C92;
 }
+
+
+@media only screen and (min-width: 1600px) {
+    article.services_blurb {
+        width: 800px;
+    }
+
+    article.paylo_testimony {
+        width: 500px;
+    }
+}
