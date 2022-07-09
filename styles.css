@@ -50,7 +50,7 @@ a:link, a:visited {
 }
 
 .wrapper {
-    width: 960px;
+    width: 1100px;
     margin: 0 auto;
 }
 
@@ -172,7 +172,7 @@ article.services_blurb {
     clear: both;
     float: left;
     width: 620px;
-    margin: 85px 10px;
+    margin: 75px 10px;
 }
 
 .paylo_logo {
@@ -182,19 +182,20 @@ article.services_blurb {
 }
 
 article.services_blurb h1 {
-    font-size: 25px;
+    font-size: 26px;
     color: #168fad;
-    margin: 5px 0;
+    margin: 4px 0;
 }
 
 article.services_blurb p {
-    margin: 5px 20px 20px 0px;
+    margin: 5px 20px 0px 0px;
+    font-size: 18px;
 }
 
 article.paylo_testimony {
     float: right;
     width: 300px;
-    margin: 50px 10px;
+    margin: 60px 10px;
 }
 
 /* Paylo Company Testimony */
@@ -222,10 +223,4 @@ p.testimony_name {
     font-weight: bold;
     text-align: center;
     color: #5E8C92;
-}
-
-@media only screen and (max-width: 1600px) {
-    .wrapper {
-        width: 1100px;
-    }
 }
