@@ -299,11 +299,3 @@ p.testimony_name {
     text-align: center;
     color: #FFFFFF;
 }
-
-@media screen and (min-width: 1600px) {
-    .logo {
-        margin-left: -40%;
-        margin-right: -150%;
-        width: 9%;
-    }
-}
