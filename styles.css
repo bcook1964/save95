@@ -45,7 +45,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 a:link, a:visited {
-    color: #00A0DD;
+    color: #4fcdff;
     text-decoration: none;
 }
 
@@ -128,7 +128,7 @@ span {
 }
 
 .navbar_two.active {
-    background: white;
+    background: rgb(246, 246, 246);
     display: flex;
     justify-content: space-around;
     align-items: center;
@@ -178,7 +178,7 @@ header li a {
 }
 
 header li a:hover, a.active {
-    color: #0C4C91;
+    color: #00A0DD;
 }
 
 /* Main Feature */
@@ -243,7 +243,6 @@ header li a:hover, a.active {
 
 /* Service Examples Blurb */
 article.services_blurb {
-    height: 150vh;
     clear: both;
     float: left;
     width: 620px;
