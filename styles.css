@@ -132,8 +132,8 @@ h1.logo_head a {
 }
 
 .logo {
-    width: 11%;
-    margin-left: -20%;
+    width: 10%;
+    margin-left: -25%;
     margin-right: -100%;
     cursor: pointer;
     /* IE Support */
@@ -276,4 +276,11 @@ p.testimony_name {
     font-weight: bold;
     text-align: center;
     color: #FFFFFF;
+}
+
+@media screen and (min-width: 1600px) {
+    .logo {
+        margin-left: -50%;
+        margin-right: -150%;
+    }
 }
