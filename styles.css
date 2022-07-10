@@ -55,10 +55,6 @@ a:link, a:visited {
 }
 
 /* Header */
-header {
-    height: 80px;
-}
-
 nav {
     padding: 0px 20px;
     width: 100%;
@@ -70,57 +66,60 @@ nav {
     align-items: center;
 }
 
-.social_navbar {
-    background-color: #0C4C91;
-    color: #FFFFFF;
-    height: 40px;
-    cursor: pointer;
-    /* IE Support */
-    cursor: hand;
+.navbar_one {
+    background-color: white;
+    height: 45px;
+    margin: 3px 70px 0;
+    margin-bottom: 2px;
 }
 
 .left > div + div {
     margin-left: 40px;
 }
 
-.right > div {
-    margin-left: 60px;
-    margin-right: 20px;
+.right > div + div {
+    margin-left: 40px;
 }
 
 .left > div:hover, .right > div:hover {
-    color: black;
+    color: #00A0DD;
     transition: all 0.5s;
 }
 
 span {
-    margin-left: 5px;
     font-size: 16px;
+    margin-left: 5px;
 }
-
-.email img {
-    padding-left: 20px;
-    width: 7%;
-    margin-bottom: -6px;
-}
-
-.call img {
-    margin-left: -130px;
-    width: 3.2%;
-    margin-bottom: -7px;
-}
-
 
 .facebook_navbar img {
-    margin-left: -130px;
-    width: 28%;
-    margin-bottom: -6px;
+    width: 30px;
+    margin-top: 5px;
+    cursor: pointer;
 }
 
 .youtube_navbar img {
-    margin-left: -100px;
-    width: 34%;
-    margin-bottom: -7px;
+    width: 60px;
+    margin-top: 5px;
+    cursor: pointer;
+}
+
+.email {
+    cursor: pointer;
+}
+
+.call {
+    cursor: pointer;
+}
+
+.navbar_two {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    min-height: 10vh;
+    position: fixed;
+    width: 100%;
+    z-index: 10;
+    transition: 200ms ease-in-out;
 }
 
 /* Logo */
@@ -128,17 +127,14 @@ h1.logo_head a {
     display: block;
     width: 221px;
     height: 50px;
-    float: left;
     margin: 20px 0 0 10px;
     text-indent: -5000px;
 }
 
 .logo {
-    width: 16%;
-    float: left;
-    margin-right: -600px;
-    margin-top: 13px;
-    margin-bottom: 10px;
+    width: 11%;
+    margin-left: -310px;
+    margin-right: -1400px;
     cursor: pointer;
     /* IE Support */
     cursor: hand;
@@ -146,25 +142,18 @@ h1.logo_head a {
 
 /* Main Navigation */
 header ul {
-    float: right;
     margin: 35px 0;
 }
 
 header li {
     display: inline-block;
     width: 120px;
-    height: 36px;
-    margin: 0 10px 0 0;
-}
-
-header li.home {
-    margin-right: -4px;
+    margin-right: 70px;
 }
 
 header li a {
     display: block;
     width: 100px;
-    height: 36px;
     text-align: center;
     font-size: 18px;
     font-weight: bold;
