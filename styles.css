@@ -282,5 +282,6 @@ p.testimony_name {
     .logo {
         margin-left: -40%;
         margin-right: -150%;
+        width: 9%;
     }
 }
