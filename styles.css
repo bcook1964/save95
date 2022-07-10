@@ -133,8 +133,8 @@ h1.logo_head a {
 
 .logo {
     width: 11%;
-    margin-left: -310px;
-    margin-right: -1400px;
+    margin-left: -20%;
+    margin-right: -80%;
     cursor: pointer;
     /* IE Support */
     cursor: hand;
