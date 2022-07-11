@@ -66,6 +66,7 @@ nav {
     align-items: center;
 }
 
+/* Secondary Navbar */
 .navbar_one {
     position: fixed;
     background-color: white;
@@ -114,6 +115,7 @@ span {
     cursor: pointer;
 }
 
+/* Primary Navbar */
 .navbar_two {
     background: transparent;
     display: flex;
@@ -128,7 +130,11 @@ span {
 }
 
 .navbar_two.active {
+<<<<<<< Updated upstream
     background: rgb(246, 246, 246);
+=======
+    background: rgb(248, 247, 247);
+>>>>>>> Stashed changes
     display: flex;
     justify-content: space-around;
     align-items: center;
@@ -229,7 +235,7 @@ header li a:hover, a.active {
     font-size: 17px;
     color: white;
     width: 150px;
-    height: 50px;
+    height: 45px;
     cursor: pointer;
     /* IE Support */
     cursor: hand;
@@ -297,4 +303,56 @@ p.testimony_name {
     font-weight: bold;
     text-align: center;
     color: #FFFFFF;
+}
+
+/* Featured Services */
+ul.featured_columns {
+    clear: both;
+    height: 240px;
+    width: 1130px;
+	margin: 0 auto;
+    padding-top: 10px;
+}
+
+ul.featured_columns li {
+    width: 356px;
+    margin: 0 10px;
+    float: left;
+}
+
+ul.featured_columns p {
+    border-left: 2px solid #CDE0E4;
+    margin: 10px 0 10px 15px;
+    padding: 0 0 0 25px;
+}
+
+.button_1 {
+    display: block;
+    width: 120px;
+    height: 28px;
+    text-align: center;
+    line-height: 28px;
+    background-color: #00A0DD;
+    border: 1px solid #0C4C91;
+    font-weight: bold;
+    font-size: 12px;
+    cursor: pointer;
+    /* IE Support */
+    cursor: hand;
+    transition: all 0.2s;
+    border-radius: 4px;
+}
+
+.featured_columns a {
+    color: white;
+}
+
+.button_1:hover {
+    background: #0C4C91;
+    transition: all 0.2s;
+}
+
+.button_1.active {
+    background: #0C4C91;
+    transition: all 0.2s;
 }
