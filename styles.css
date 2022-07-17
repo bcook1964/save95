@@ -243,6 +243,59 @@ header li a:hover, a.active {
     border-radius: 4px;
 }
 
+/* Video Popup */
+.popup .overlay {
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    width: 100vw;
+    height: 100vh;
+    background: rgba(0,0,0,0.7);
+    z-index: 100;
+    display: none;
+}
+
+.popup .video_content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) scale(0);
+    background: #FFFFFF;
+    width: 750px;
+    height: 470px;
+    z-index: 102;
+    text-align: center;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+.popup .close_btn {
+    cursor: pointer;
+    /* IE Support */
+    cursor: hand;
+    position: absolute;
+    right: 20px;
+    top: 20px;
+    width: 30px;
+    height: 30px;
+    background: #222222;
+    color: #FFFFFF;
+    font-size: 25px;
+    font-weight: 600;
+    line-height: 30px;
+    text-align: center;
+    border-radius: 50%;
+}
+
+.popup.active .overlay {
+    display: block;
+}
+
+.popup.active .video_content {
+    transition: all 300ms ease-in-out;
+    transform: translate(-50%, -50%) scale(1);
+}
+
 /* Service Examples Blurb */
 article.services_blurb {
     clear: both;

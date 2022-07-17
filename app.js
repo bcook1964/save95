@@ -10,3 +10,7 @@ window.onscroll = function(){
         header.classList.remove('active')
     }
 }
+
+function togglepopup(){
+    document.getElementById("popup_video").classList.toggle("active");
+}
