@@ -386,7 +386,8 @@ p.testimony_name {
 
     img.active{
         width: 25%;
-        height: 70%;
+        height: 50%;
+        max-height: 50%;
     }
 
     .topnav {
