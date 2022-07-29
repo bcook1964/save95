@@ -391,16 +391,12 @@ p.testimony_name {
     }
 
     .topnav {
+        margin-top: 25px;
         margin-left: 10px;
     }
 
     .topnav a {
         line-height: 10px;
         font-size: 16px;
-    }
-
-    .navbar {
-        height: 50px;
-        max-height: 50px;
     }
 }
