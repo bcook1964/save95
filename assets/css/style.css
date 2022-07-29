@@ -380,10 +380,17 @@ p.testimony_name {
     }
 
     .normal {
-        width: 15%;
+        width: 25%;
+        height: 70%;
     }
 
     img.active{
-        width: 15%;
+        width: 25%;
+        height: 70%;
+    }
+
+    .topnav a {
+        line-height: 0px;
+        font-size: 16px;
     }
 }
