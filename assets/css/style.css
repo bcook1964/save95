@@ -401,15 +401,15 @@ p.testimony_name {
     }
 
     article.services_blurb p {
-        font-size: 22px;
+        font-size: 21px;
     }
 
     .testimony_wrapper {
-        height: 270px;
+        height: 280px;
     }
 
     p.testimony_name {
-        margin-top: 180px;
+        margin-top: 190px;
     }
 
     p.testimony {
