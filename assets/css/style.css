@@ -135,7 +135,7 @@ span {
     justify-content: space-around;
     color: #f2f2f2;
     text-align: center;
-    padding: 25px 40px;
+    padding: 22px 40px;
     margin-right: 7px;
     text-decoration: none;
     font-size: 15px;
@@ -389,8 +389,12 @@ p.testimony_name {
         height: 70%;
     }
 
+    .topnav {
+        margin-left: 10px;
+    }
+
     .topnav a {
-        line-height: 0px;
+        line-height: 10px;
         font-size: 16px;
     }
 }
