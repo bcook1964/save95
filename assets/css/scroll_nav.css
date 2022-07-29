@@ -1,0 +1,11 @@
+.pa-fixed-header {
+	background-color: #f8f8f8 !important;
+}
+
+.text-black{
+    color: rgb(88, 88, 88) !important;
+}
+
+.text-black:hover, .text-black:active, .text-black.active {
+    color:#00A0DD !important;
+}

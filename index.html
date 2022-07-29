@@ -1,120 +1,103 @@
 <!DOCTYPE html>
-<html>
-    <head>
-        <meta charset="utf-8"/>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
 
-        <!--Viewport Responsive Device-->
-        <meta name="Viewport" content="width=device-width", initial-scale="1.0">
-        <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet" type="text/css">
-        <link rel="stylesheet" href="styles.css" type="text/css">
+    <!--Viewport Responsive Device-->
+    <meta name="Viewport" content="width=device-width", initial-scale="1.0">
 
-        <!--Internet Explorer Javascript-->
-        <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <!--CSS stylesheet Links-->
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="assets/css/scroll_nav.css">
 
-        <title>Save95</title>
-        <link rel="shortcut icon" type="image/png" href="./Images/Favicon.png">
+    <!--Website Info-->
+    <title>Save95</title>
+    <link rel="shortcut icon" type="image/png" href="./assets/img/Favicon Save Severed.png">
 
-    </head>
+</head>
+<body>
 
-    <body>
-        <header>
+    <!-- Header -->
+    <header class="width-100p">
 
-            <section class="navbar_one flex">
+            <section class="navbar-one flex">
                 <div class="left flex">
                     <div class="email">
-                        <span><strong>Email:</strong> bcook@save95.net</span>
+                        <span><strong class="empty">Sales:</strong><a href="mailto:bcook@save95.net">bcook@save95.net</a><strong class="divider">|</strong></span>
                     </div>
                     <div class="call">
-                        <span><strong>Phone:</strong> (580) 706-7420</span>
-                    </div>
-                </div>
-                <div class="right flex">
-                    <div class="facebook_navbar">
-                        <img src="./Images/social-facebook-icon.png">
-                    </div>
-                    <div class="youtube_navbar">
-                        <img src="./Images/Logo_of_YouTube_(2015-2017).svg">
+                        <span><strong class="empty">Support:</strong><a href="tel:5807067420">(580) 706-7420</a></span>
                     </div>
                 </div>
             </section>
 
-                <div class="navbar_two">
-                    <img class="logo" src="./Images/Save95.svg"> <link href="#">
-                    <h1 class="logo_head"><a href="index.html">Save95</a></h1>
-                    <ul>
-                        <li class="home"><a href="index.html" class="active">Home</a></li>
-                        <li><a href="#">Resources</a></li>
-                        <li><a href="#">Company</a></li>
-                        <li><a href="#">Contact</a></li>
-                    </ul>
-                </div>
-
-        </header>
-
-        <section class="home_feature">
-            <div class="wrapper">
-
-                <!--Intro Section Text-->
-                <article class="feature_text">
-                    <h1> A Better Way to Process all Payments.</h1>
-                    <p>The cost of processing payments today is higher than ever. Are you looking for an easier low-cost way to take payments? The Paylo Program is the solution for you.</p>
-                    <button onclick="togglepopup()" class="cta_select" id="go">Learn More</button>
-                </article>
-
-            </div><!--.wrapper-->
-
-            <div class="popup" id="popup_video">
-                <div class="overlay">
-                    <div class="video_content">
-                        <div class="close_btn" onclick="togglepopup()">&times;</div>
-                        <h1>Paylo Video</h1>
-                        <iframe src="https://player.vimeo.com/video/546170721?h=1cc979316d&title=0&byline=0&portrait=0" width="640" height="360" frameborder="0" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen></iframe>
-                        <p><a href="https://vimeo.com/546170721">PayLo Merchants Sales Video</a> from <a href="https://vimeo.com/user67740724">SignaPay</a> on <a href="https://vimeo.com">Vimeo</a>.</p>
+        <!-- Navbar -->
+        <div class="navbar">
+            <div class="navbar" id="navBar">
+                <nav class="topnav container" id="myTopnav">
+                    <div class="images" id="images">
+                        <img src="./assets/img/Save Transparent Severed.svg"a href="#" class="active"></a>
+                        <img src="./assets/img/Save Severed.svg"a href="#" class="normal"> </a>
                     </div>
-                </div>
+                    <a href="">Contact Us</a>
+                    <a href="">Company</a>
+                    <a href="">Resources</a>
+                    <a class ="active" href="">Home</a>
+                </nav>
             </div>
+        </div>
 
-        </section>
+    </header>
+    <!-- Header End -->
 
+    <!--Home Feature-->
+    <section class="home_feature">
         <div class="wrapper">
-            <!--Blurb Columns Text-->
-            <article class="services_blurb">
-                <img src="./Images/PayLo-Logo.png" class="paylo_logo">
-                <h1>Solutions that Work.</h1>
-                <p>Accepting credit card payments has become an important component for any business looking to succeed long-term and stay up to par with competition. Unfortunately, depending on the type of business you own and the services you provide, you may be classified as a "high risk" business and find it challenging to get set up with payment processing. If you've struggled with finding a credit card processor that's right for your business, look no further - Paylo is here to help.</p>
+
+            <!--Intro Section Text-->
+            <article class="feature_text">
+                <h1> A Better Way to Process all Payments.</h1>
+                <p>The cost of processing payments today is higher than ever. Are you looking for an easier low-cost way to take payments? The Paylo Program is the solution for you.</p>
+                <button onclick="togglepopup()" class="cta_select" id="go">Learn More</button>
             </article>
-            
-            <!--Paylo Company Testimony-->
-            <article class="paylo_testimony">
-                <div class="testimony_wrapper">
-                    <p class="testimony">
-                        "Our mantra is simple: "Make it Easy." Easy to get your processing application approved, easy to see your revenue, easy to stop fraud, easy to get your equipment fixed - whatever it is, we make it easy for the customer so that they can be empowered to grow their business."
-                    </p>
-                    <p class="testimony_name">About Us, Paylo</p>
-                </div>
-            </article>        
+
         </div><!--.wrapper-->
 
-        <ul class="featured_columns">
-            <li class="column_one">
-                <h3>Plug It In</h3>
-                <p>Your PayLo Welcome Kit comes with all the equipment, instructions and customer assistance fee signage you need to get up and running quickly.</p>
-		        <a href="#" class="button_1">Find Out More</a>
-            </li>
-            <li class="column_two">
-                <h3>Post Signs</h3>
-                <p>Whether you are a restaurant, retail or mobile payment vendor, we have signage to fit your needs and keep you in compliance.</p>
-		        <a href="#" class="button_1">Find Out More</a>
-            </li>
-            <li class="column_three">
-                <h3>Start Saving</h3>
-                <p>Start saving money with your very first transaction. At the end of the month get a summary of your entire savings analysis.</p>
-		        <a href="#" class="button_1">Find Out More</a>
-            </li>
-        </ul>
+        <div class="popup" id="popup_video">
+            <div class="overlay">
+                <div class="video_content">
+                    <div class="close_btn" onclick="togglepopup()">&times;</div>
+                    <iframe src="https://player.vimeo.com/video/546170721?h=1cc979316d&title=0&byline=0&portrait=0" width="640" height="360" frameborder="0" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen></iframe>
+                    <p><a href="https://vimeo.com/546170721">PayLo Merchants Sales Video</a> from <a href="https://vimeo.com/user67740724">SignaPay</a> on <a href="https://vimeo.com">Vimeo</a>.</p>
+                </div>
+            </div>
+        </div>
 
-        <script src="app.js"></script>
+    </section>
 
-    </body>
+    <div class="wrapper">
+        <!--Blurb Columns Text-->
+        <article class="services_blurb">
+            <img src="assets/img/PayLo-Logo.png" class="paylo_logo">
+            <h1>Solutions That Work.</h1>
+            <p>Accepting various credit card payments has become an important component for any business looking to succeed long-term and stay up to par with competition. Unfortunately, depending on the type of business you own and the services you provide, you may be classified as a "high risk" business and find it challenging to get set up with payment processing. If you've struggled with finding a credit card processor that's right for your business, look no further - Paylo is here to help.</p>
+        </article>
+        
+        <!--Paylo Company Testimony-->
+        <article class="paylo_testimony">
+            <div class="testimony_wrapper">
+                <p class="testimony">
+                    "Our mantra is simple: "Make it Easy." Easy to get your processing application approved, easy to see your revenue, easy to stop fraud, easy to get your equipment fixed - whatever it is, we make it easy for the customer so that they can be empowered to grow their business."
+                </p>
+                <p class="testimony_name">About Us, Paylo</p>
+            </div>
+        </article>        
+    </div><!--.wrapper-->
 
+    <!--Scripts Here-->
+    <script src="assets/js/scroll_nav.js"></script>
+    <script src="assets/js/app.js"></script>
+    <!--Scripts End-->
+    
+</body>
 </html>
