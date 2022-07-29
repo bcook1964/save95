@@ -380,11 +380,13 @@ p.testimony_name {
     }
 
     .normal {
+        margin-top: 35px;
         width: 25%;
         height: 70%;
     }
 
     img.active{
+        margin-top: 35px;
         width: 25%;
         height: 65%;
         max-height: 65%;
@@ -396,6 +398,7 @@ p.testimony_name {
     }
 
     .topnav a {
+        margin-top: 35px;
         line-height: 10px;
         font-size: 16px;
     }
