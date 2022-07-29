@@ -375,9 +375,6 @@ p.testimony_name {
 }
 
 @media only screen and (min-width: 1600px) {
-    body{
-        height: 300vh;
-    }
 
     .normal {
         margin-top: 29px;
@@ -394,7 +391,7 @@ p.testimony_name {
 
     .topnav {
         margin-top: 25px;
-        margin-left: 10px;
+        margin-left: 50px;
     }
 
     .topnav a {
