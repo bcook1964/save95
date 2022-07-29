@@ -140,6 +140,7 @@ span {
     text-decoration: none;
     font-size: 15px;
     font-weight: bold;
+    line-height: 25px;
     letter-spacing: 1.4px;
 }
   
@@ -152,6 +153,7 @@ span {
     display: none;
     float: left;
     width: 25%;
+    max-width: 25%;
     height: 82%;
     cursor: pointer;
     /* IE Support */
@@ -163,6 +165,7 @@ img.active {
     display: flex;
     float: left;
     width: 25%;
+    max-width: 25%;
     height: 82%;
     cursor: pointer;
     /* IE Support */
