@@ -644,6 +644,10 @@ h3 {
         font-size: 16px;
     }
 
+    .social-wrapper{
+        padding-right: 20vw;
+    }
+
     article.services_blurb h1 {
         font-size: 25px;
     }
