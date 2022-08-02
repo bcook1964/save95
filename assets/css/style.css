@@ -15,6 +15,7 @@ fieldset, img {
 
 *{
     box-sizing: border-box;
+    padding: 0;
     margin: 0;
     font-family: Arial, Helvetica, sans-serif;
 }
@@ -49,13 +50,13 @@ a{
 }
 
 body {
-    background-color: white;
+    background-color: #F9F9F9;
 }
 
 .wrapper {
     width: 1100px;
     margin: 0 auto;
-    position: relative;
+    z-index: 10;
 }
 
 /* Header */
@@ -68,10 +69,10 @@ nav {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    z-index: 1000;
 }
 
 .navbar-one {
+    z-index: 1000;
     position: fixed;
     background-color: white !important;
     height: 60px;
@@ -184,9 +185,87 @@ img.active {
     box-shadow: 0px 3px 5px rgba(0 0 0 /10%);
 }
 
+/* Social Sidebar Widget */
+.social-wrapper{
+    display: flex;
+    justify-content: flex-end;
+    padding-right: 5vw;
+    width: 100em;
+    overflow: hidden;
+}
+
+.social {
+    z-index: 1;
+    display: flex;
+    justify-content: flex-end;
+    position: fixed;
+    width: 50%;
+    margin-top: 160px;
+}
+
+.social li{
+    transition: 0.5s;
+    border-radius: 2px;
+    width: 41px;
+    margin-top: 10px;
+    padding-right: 4px;
+    height: 40px;
+    position: relative;
+}
+
+.social li a{
+    color: white;
+    display: block;
+    width: 100%;
+    height: 100%;
+    line-height: 60px;
+}
+
+.social li a:hover{
+    color: rgba(255,255,255,0.8)
+}
+
+.social li:nth-child(1) a{
+    border-radius: 2px;
+    background: #4267B2;
+}
+
+.social li:nth-child(1) a:hover{
+    background: rgba(66, 103, 178, 0.8);
+}
+
+.social li:nth-child(2) a{
+    border-radius: 2px;
+    background: #ff0000;
+}
+
+.social li:nth-child(2) a:hover {
+    background: rgba(255, 0, 0, 0.8);
+}
+
+.social li a i{
+    position: absolute;
+    top: 6px;
+    left: 7px;
+}
+
+.social li:nth-child(1) a i{
+    padding-left: 2.5px;
+    padding-top: 1.5px;
+    font-size: 25.5px;
+}
+
+.social li:nth-child(2) a i{
+    font-size: 24.5px;
+    padding-top: 2px;
+    padding-left: 1.2px;
+}
+
 /* Main Feature */
 .home_feature {
-    background: url(../img/20191127190639-shutterstock-431848417-crop.jpeg);
+    display: grid;
+    place-items: center;
+    background: url(../img/img-home/20191127190639-shutterstock-431848417-crop.jpeg);
     box-shadow: inset 0 0 0 2000px rgba(0,0,0,0.6);
     background-position: 15% 75%;
     background-attachment: fixed;
@@ -201,7 +280,7 @@ img.active {
 }
 
 .feature_text h1 {
-    margin-top: 120px;
+    margin-top: 70px;
 }
 
 .feature_text h1, .feature_text p {
@@ -211,21 +290,24 @@ img.active {
 }
 
 .feature_text h1 {
-    font-size: 40px;
+    font-size: 35px;
 }
 
 .feature_text p {
     line-height: 29px;
     margin-top: 15px;
-    font-size: 20px
+    font-size: 20px;
 }
 
 .home_feature button {
     letter-spacing: 0.5px;
     margin-top: 30px;
+    left: 50%;
+    margin-left: -5%;
 }
 
 .cta_select#go {
+    position: absolute;
     transition: all 0.1s linear 0s;
     padding: 10px 10px 10px 10px;
     border: 1px solid white;
@@ -238,6 +320,7 @@ img.active {
     cursor: pointer;
     /* IE Support */
     cursor: hand;
+    z-index: 10;
 }
 
 .cta_select#go:hover {
@@ -245,6 +328,7 @@ img.active {
     background-color: #00A0DD;
     border-radius: 3px;
     color: white;
+    z-index: 10;
 }
 
 /* Video Popup */
@@ -255,7 +339,7 @@ img.active {
     width: 100vw;
     height: 100vh;
     background: rgba(0,0,0,0.7);
-    z-index: 100;
+    z-index: 10000;
     display: none;
 }
 
@@ -310,12 +394,16 @@ img.active {
 }
 
 /* Service Examples Blurb */
+.blurb-columns {
+    margin-top: 75px;
+}
+
 article.services_blurb {
     clear: both;
     float: left;
     padding-right: 16px;
     width: 630px;
-    margin: 75px 0px;
+    margin: 5.5px 0px;
 }
 
 .paylo_logo {
@@ -331,8 +419,8 @@ article.services_blurb h1 {
 }
 
 article.services_blurb p {
-    margin: 7px 40px 0px 0px;
-    font-size: 19px;
+    margin: 7px 50px 0px 0px;
+    font-size: 18px;
     line-height: 23px;
     color: rgb(88, 88, 88);
     text-align: justify;
@@ -341,12 +429,13 @@ article.services_blurb p {
 article.paylo_testimony {
     float: right;
     width: 300px;
-    margin: 67px 70px;
+    margin: 0px 70px;
 }
 
 /* Paylo Company Testimony */
 .testimony_wrapper {
     border: 1px solid #cddbe4;
+    background-color: #FFFFFF;
     width: 368px;
     height: 257px;
 }
@@ -374,6 +463,161 @@ p.testimony_name {
     color: #FFFFFF;
 }
 
+/* Services Section */
+.service-columns {
+    padding: 0 2em;
+    width: 100%;
+    display: grid;
+    place-items: center;
+    text-align: center;
+}
+
+.section-heading {
+    margin-top: 80px;
+    font-size: 26px;
+    color: rgb(40, 40, 40);
+    padding-bottom: 50px;
+}
+
+.row {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.column {
+    flex: 0 0 33.33%;
+    max-width: 33.33%;
+    padding: 0 1em 1em 1em;
+    text-align: center;
+}
+
+.card {
+    width: 100%;
+    height: 100%;
+    padding: 2em 1.5em;
+    background: linear-gradient(#ffffff 50%, #2c7bfe 50%);
+    background-size: 100% 200%;
+    background-position: 0 2.5%;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.12);
+    cursor: pointer;
+    /* IE Support */
+    cursor: hand;
+    transition: 0.5s;
+}
+
+h3 {
+    font-size: 20px;
+    font-weight: 600;
+    color: rgb(40, 40, 40);
+    margin: 1em 0;
+}
+
+.img-wrapper {
+    position: relative;
+    margin: auto;
+    height: 35vh;
+    padding-top: 19px;
+    width: 100%;
+}
+
+.cre-img-wrapper {
+    position: relative;
+    margin: auto;
+    height: 35vh;
+    padding-top: 60px;
+    width: 100%;
+}
+
+.lane-img-wrapper {
+    position: relative;
+    margin: auto;
+    height: 35vh;
+    padding-top: 62px;
+    width: 80%;
+}
+
+.card img {
+    width: 80%;
+    transition: 0.5s;
+}
+
+.card p {
+    color: rgb(88, 88, 88);
+    font-size: 15px;
+    line-height: 1.6;
+    letter-spacing: 0.03em;
+}
+
+.card:hover {
+    background-position: 0 100%;
+}
+
+.card:hover h3 {
+    color: #ffffff;
+}
+
+.card:hover p {
+    color: #f0f0f0;
+}
+
+/* Equipment Section */
+.equipment-options {
+    width: 100%;
+    display: grid;
+    place-items: center;
+    text-align: center;
+    padding-left: 8em;
+}
+
+.section-two-heading {
+    margin-top: 80px;
+    font-size: 26px;
+    color: rgb(40, 40, 40);
+    padding-bottom: 50px;
+    margin-left: -4.8em;
+}
+
+.equipment-column{
+    flex: 0 0 50%;
+    max-width: 50%;
+    width: 100%;
+    padding: 0 1em 1em 1em;
+    text-align: center;
+}
+
+.equipment-card {
+    position: relative;
+    box-shadow: 0 0 10px rgba(0,0,0,0.12);
+    background-color: white;
+    width: 80%;
+    height: 100%;
+}
+
+.header-img {
+    margin: auto;
+    height: 22vh;
+    width: 100%;
+}
+
+.equipment-card img {
+    width: 100%;
+    transition: 0.5s;
+}
+
+.equipment-card h3 {
+    margin-top: 150px;
+}
+
+.equipment-card p {
+    padding: 0 1em 3em 1em;
+    color: rgb(88, 88, 88);
+    font-size: 15px;
+    line-height: 1.6;
+    letter-spacing: 0.03em;
+}
+
+/* Responsive for Desktop */
 @media only screen and (min-width: 1600px) {
 
     .normal {
@@ -400,8 +644,13 @@ p.testimony_name {
         font-size: 16px;
     }
 
+    article.services_blurb h1 {
+        font-size: 25px;
+    }
+
     article.services_blurb p {
         font-size: 21px;
+        margin: 7px 40px 0px 0px;
     }
 
     .testimony_wrapper {
