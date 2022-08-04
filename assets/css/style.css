@@ -65,6 +65,12 @@ body {
     z-index: 10;
 }
 
+.blurb-wrapper {
+    width: 1100px;
+    margin: 0 auto;
+    z-index: 10;
+}
+
 /* Header */
 nav {
     padding: 0px 20px;
@@ -622,6 +628,10 @@ h3 {
 @media only screen and (min-width: 1600px) {
     .columns-wrapper {
         width: 1200px;
+    }
+
+    .blurb-wrapper {
+        width: 150px;
     }
 
     .normal {
