@@ -614,6 +614,9 @@ h3 {
 
 /* Responsive for Desktop */
 @media only screen and (min-width: 1600px) {
+    .wrapper {
+        width: 1500px;
+    }
 
     .normal {
         margin-top: 29px;
@@ -660,18 +663,8 @@ h3 {
         font-size: 20px;
     }
 
-    .column {
-        flex: 0 0 35.33%;
-        max-width: 35.33%;
-    }
-
     .card p {
         font-size: 17px;
-    }
-
-    .equipment-column {
-        flex: 0 0 55%;
-        max-width: 55%;
     }
 
     .equipment-card p {
