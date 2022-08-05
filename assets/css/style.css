@@ -845,7 +845,7 @@ h3 {
     }
 
     .fa-angle-down {
-        margin-top: 4px;
+        margin-top: 2px;
     }
 
     .drop-2 {
@@ -855,12 +855,11 @@ h3 {
     }
 
     .drop li a {
-        line-height: 0.2px;
+        line-height: 0.02px;
     }
 
     .drop-2 li a {
-        top: -30px;
-        line-height: 0.2px;
+        line-height: 0.02px;
     }
 
     article.services_blurb h1 {
@@ -905,6 +904,10 @@ h3 {
 @media only screen and (max-width: 1500px) {
     .footer-2 {
         padding-left: 17rem;
+    }
+
+    .drop {
+        width: 23%;
     }
 
     .drop-2 {
