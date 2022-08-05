@@ -138,7 +138,6 @@ span {
     padding-left: 40px;
     padding-top: 13px;
     height: 11.5vh;
-    overflow: hidden;
     z-index: 1;
 }
 
@@ -148,10 +147,10 @@ span {
     justify-content: space-around;
     color: #f2f2f2;
     text-align: center;
-    padding: 22px 40px;
-    margin-right: 7px;
+    padding: 22px 38px;
+    margin-right: 0px;
     text-decoration: none;
-    font-size: 15px;
+    font-size: 14px;
     font-weight: bold;
     line-height: 25px;
     letter-spacing: 1.4px;
@@ -195,6 +194,75 @@ img.active {
     top: 0;
     z-index: 100;
     box-shadow: 0px 3px 5px rgba(0 0 0 /10%);
+}
+
+/* Dropdown Menu */
+nav ul li {
+    position: relative;
+}
+
+.drop {
+    display: none;
+    border-radius: 4px;
+    width: 20%;
+    position: absolute;
+    left: 55.5rem;
+    top: 3.5rem;
+    background-color: #ffffff;
+    padding-bottom: 5px;
+    padding-top: 15px;
+}
+
+nav ul li:hover ul {
+    display: block;
+}
+
+.fa-angle-down {
+    margin-top: 7px;
+    margin-left: 7px;
+    font-size: 12px;
+}
+
+.drop li {
+    display: grid;
+    justify-content: left;
+    margin-left: -20px;
+}
+
+.drop li a {
+    line-height: 1px;
+    color: rgb(88, 88, 88);
+}
+
+.drop li a:hover, .drop a.active, .drop a:active {
+    color: #00A0DD;
+}
+
+.drop-2 {
+    display: none;
+    border-radius: 4px;
+    width: 20%;
+    position: absolute;
+    left: 35.5rem;
+    top: 3.5rem;
+    background-color: #ffffff;
+    padding-bottom: 5px;
+    padding-top: 15px;
+}
+
+.drop-2 li {
+    display: grid;
+    justify-content: left;
+    margin-left: -20px;
+}
+
+.drop-2 li a {
+    line-height: 1px;
+    color: rgb(88, 88, 88);
+}
+
+.drop-2 li a:hover, .drop a.active, .drop a:active {
+    color: #00A0DD;
 }
 
 /* Social Sidebar Widget */
@@ -766,7 +834,7 @@ h3 {
     .topnav a {
         margin-top: 40px;
         line-height: 10px;
-        font-size: 16px;
+        font-size: 15px;
     }
 
     article.services_blurb h1 {
