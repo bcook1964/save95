@@ -844,8 +844,12 @@ h3 {
         padding-top: 2px;
     }
 
+    .drop li {
+        margin-top: -20px;
+    }
+
     .fa-angle-down {
-        margin-top: 2px;
+        margin-top: 1px;
     }
 
     .drop-2 {
