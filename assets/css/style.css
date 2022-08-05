@@ -575,6 +575,7 @@ h3 {
     place-items: center;
     text-align: center;
     padding-left: 8em;
+    margin-bottom: 3rem;
 }
 
 .section-two-heading {
@@ -622,6 +623,116 @@ h3 {
     font-size: 15px;
     line-height: 1.6;
     letter-spacing: 0.03em;
+}
+
+/* Footer */
+.footer-container {
+    background-color: #414042;
+    padding: 0;
+}
+
+.footer {
+    width: 80%;
+    height: 30vh;
+    background-color: #414042;
+    color: white;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin: 0 auto;
+}
+
+.footer-logo {
+    width: 20%;
+    margin-left: -1.3rem;
+}
+
+.footer-start {
+    display: flex;
+    flex-direction: column;
+    margin-right: 4rem;
+}
+
+.footer-start h4 {
+    color: #ABAEB1;
+    font-weight: normal;
+    margin-bottom: 1rem;
+}
+
+.footer-heading {
+    display: flex;
+    flex-direction: column;
+    margin-right: 4rem;
+    margin-left: 3rem;
+}
+
+.footer-1 {
+    margin-top: 2rem;
+}
+
+.footer-2 {
+    padding-left: 22rem;
+    margin-top: -10.4rem;
+}
+
+.footer-3 {
+    margin-top: -10.4rem;
+}
+
+.footer-heading h2 {
+    margin-bottom: 1.5rem;
+}
+
+.footer-heading a {
+    color: #ABAEB1;
+    margin-bottom: 0.5rem;
+}
+
+.footer-heading a:hover {
+    color: #00A0DD;
+}
+
+.footer-email-form {
+    padding-left: 6rem;
+    margin-top: -10.4rem;
+}
+
+.footer-email-form h2 {
+    margin-bottom: 2rem;
+}
+
+#footer-email {
+    width: 200px;
+    height: 30px;
+    border-radius: 4px;
+    outline: none;
+    border: none;
+    padding-left: 0.5rem;
+    font-size: 1rem;
+    margin-bottom: 0.4rem;
+}
+
+#footer-email::placeholder {
+    color: #8e8e8e;
+}
+
+#footer-email-btn {
+    width: 80px;
+    height: 30px;
+    border-radius: 3px;
+    background-color: #00A0DD;
+    border: none;
+    outline: none;
+    color: white;
+    font-size: 0.9rem;
+}
+
+#footer-email-btn:hover {
+    cursor: pointer;
+    /* IE Support */
+    cursor: hand;
+    background-color: white;
+    color: black;
 }
 
 /* Responsive for Desktop */
