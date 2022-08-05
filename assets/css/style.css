@@ -838,7 +838,6 @@ h3 {
     }
 
     .drop {
-        height: 30%;
         width: 24%;
         top: 6rem;
         padding-bottom: 5px;
@@ -850,7 +849,6 @@ h3 {
     }
 
     .drop-2 {
-        height: 30%;
         width: 24%;
         top: 6rem;
         padding-top: 2px;
@@ -861,6 +859,7 @@ h3 {
     }
 
     .drop-2 li a {
+        top: -30px;
         line-height: 0.2px;
     }
 
