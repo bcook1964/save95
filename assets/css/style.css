@@ -810,6 +810,6 @@ h3 {
 /* Smaller Screen Responsiveness */
 @media only screen and (max-width: 1500px) {
     .footer-2 {
-        padding-left: 20rem;
+        padding-left: 15rem;
     }
 }
