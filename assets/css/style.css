@@ -839,16 +839,23 @@ h3 {
 
     .drop {
         width: 30%;
-        left: 55.5rem;
-        top: 0rem;
+        top: 6rem;
         padding-bottom: 5px;
         padding-top: 2px;
     }
 
+    .fa-angle-down {
+        margin-top: 4px;
+    }
+
     .drop-2 {
         width: 30%;
-        top: 4rem;
+        top: 6rem;
         padding-top: 2px;
+    }
+
+    .drop li a {
+        line-height: 0.2px;
     }
 
     .drop-2 li a {
@@ -900,6 +907,6 @@ h3 {
     }
 
     .drop-2 {
-        width: 30%;
+        width: 25%;
     }
 }
