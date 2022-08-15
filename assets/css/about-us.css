@@ -845,6 +845,14 @@ nav ul li:hover ul {
         left: 35rem;
         width: 23%;
     }
+
+    .icons-container {
+        margin-bottom: 10px;
+    }
+
+    .our-vision {
+        padding: 1.5rem 0rem;
+    }
 }
 
 @media only screen and (max-width: 1505px) and (min-width: 1500px) {
@@ -859,5 +867,13 @@ nav ul li:hover ul {
     .drop-2 {
         left: 35rem;
         width: 23%;
+    }
+
+    .icons-container {
+        margin-bottom: 10px;
+    }
+
+    .our-vision {
+        padding: 1.5rem 0rem;
     }
 }
