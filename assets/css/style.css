@@ -912,10 +912,6 @@ h3 {
         padding-top: 2px;
     }
 
-    .drop li {
-        margin-top: -30px;
-    }
-
     .fa-angle-down {
         margin-top: 1px;
     }
@@ -927,15 +923,13 @@ h3 {
         padding-top: 2px;
     }
 
-    .drop-2 li {
-        margin-top: -30px;
-    }
-
     .drop li a {
+        margin-top: 7px;
         line-height: 0.02px;
     }
 
     .drop-2 li a {
+        margin-top: 8px;
         line-height: 0.02px;
     }
 
