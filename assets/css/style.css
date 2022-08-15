@@ -211,7 +211,7 @@ nav ul li {
     background-color: #ffffff;
     padding-bottom: 5px;
     padding-top: 15px;
-    z-index: 100;
+    z-index: 200;
 }
 
 nav ul li:hover ul {
@@ -225,12 +225,14 @@ nav ul li:hover ul {
 }
 
 .drop li {
+    z-index: 200;
     display: grid;
     justify-content: left;
     margin-left: -20px;
 }
 
 .drop li a {
+    z-index: 200;
     line-height: 1px;
     color: rgb(88, 88, 88);
 }
@@ -240,6 +242,7 @@ nav ul li:hover ul {
 }
 
 .drop-2 {
+    z-index: 200;
     display: none;
     border-radius: 4px;
     width: 20%;
@@ -252,6 +255,7 @@ nav ul li:hover ul {
 }
 
 .drop-2 li {
+    z-index: 200;
     display: grid;
     justify-content: left;
     margin-left: -20px;

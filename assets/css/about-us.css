@@ -198,7 +198,7 @@ nav ul li {
     background-color: #ffffff;
     padding-bottom: 5px;
     padding-top: 15px;
-    z-index: 100;
+    z-index: 200;
 }
 
 nav ul li:hover ul {
@@ -212,12 +212,14 @@ nav ul li:hover ul {
 }
 
 .drop li {
+    z-index: 200;
     display: grid;
     justify-content: left;
     margin-left: -20px;
 }
 
 .drop li a {
+    z-index: 200;
     line-height: 1px;
     color: rgb(88, 88, 88);
 }
@@ -227,6 +229,7 @@ nav ul li:hover ul {
 }
 
 .drop-2 {
+    z-index: 200;
     display: none;
     border-radius: 4px;
     width: 20%;
@@ -239,6 +242,7 @@ nav ul li:hover ul {
 }
 
 .drop-2 li {
+    z-index: 200;
     display: grid;
     justify-content: left;
     margin-left: -20px;
@@ -267,6 +271,7 @@ nav ul li:hover ul {
 }
 
 .social li{
+    z-index: 10;
     transition: 0.5s;
     border-radius: 2px;
     width: 41px;
@@ -277,6 +282,7 @@ nav ul li:hover ul {
 }
 
 .social li a{
+    z-index: 10;
     color: white;
     display: block;
     width: 100%;
@@ -786,6 +792,7 @@ nav ul li:hover ul {
         top: 6rem;
         padding-bottom: 5px;
         padding-top: 2px;
+        z-index: 200;
     }
 
     .drop li {
@@ -850,11 +857,20 @@ nav ul li:hover ul {
 
     .drop {
         width: 23%;
+        z-index: 200;
     }
 
     .drop-2 {
         left: 35rem;
         width: 23%;
+    }
+
+    .icons-container {
+        margin-bottom: 10px;
+    }
+
+    .our-vision {
+        padding: 1.5rem 0rem;
     }
 }
 
@@ -865,10 +881,19 @@ nav ul li:hover ul {
 
     .drop {
         width: 23%;
+        z-index: 200;
     }
 
     .drop-2 {
         left: 35rem;
         width: 23%;
+    }
+
+    .icons-container {
+        margin-bottom: 10px;
+    }
+
+    .our-vision {
+        padding: 1.5rem 0rem;
     }
 }
