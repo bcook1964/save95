@@ -198,6 +198,7 @@ img.active {
 
 /* Dropdown Menu */
 nav ul li {
+    z-index: 200;
     position: relative;
 }
 
@@ -215,6 +216,7 @@ nav ul li {
 }
 
 nav ul li:hover ul {
+    z-index: 200;
     display: block;
 }
 
