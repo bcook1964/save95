@@ -15,7 +15,6 @@ fieldset, img {
 
 *{
     box-sizing: border-box;
-    padding: 0;
     margin: 0;
     font-family: Arial, Helvetica, sans-serif;
 }
@@ -50,25 +49,13 @@ a{
 }
 
 body {
-    background-color: #F9F9F9;
+    background-color: #f9f9f9;
 }
 
 .wrapper {
     width: 1100px;
     margin: 0 auto;
-    z-index: 10;
-}
-
-.columns-wrapper {
-    width: 1100px;
-    margin: 0 auto;
-    z-index: 10;
-}
-
-.blurb-wrapper {
-    width: 1100px;
-    margin: 0 auto;
-    z-index: 10;
+    position: relative;
 }
 
 /* Header */
@@ -352,10 +339,8 @@ nav ul li:hover ul {
 }
 
 /* Main Feature */
-.home_feature {
-    display: grid;
-    place-items: center;
-    background: url(../img/img-home/20191127190639-shutterstock-431848417-crop.jpeg);
+.resources_feature {
+    background: url(../img/img-about/istockphoto-1351756759-170667a.jpg);
     box-shadow: inset 0 0 0 2000px rgba(0,0,0,0.6);
     background-position: 15% 75%;
     background-attachment: fixed;
@@ -363,381 +348,286 @@ nav ul li:hover ul {
     background-size: cover;
     align-items: center;
     text-align: center;
-    min-height: 70vh;
+    min-height: 40vh;
     display: flex;
     margin: auto;
     width: 100%;
 }
 
 .feature_text h1 {
-    margin-top: 70px;
-}
-
-.feature_text h1, .feature_text p {
+    margin-top: 120px;
     color: white;
-    font-weight: 500;
+    font-weight: 400;
+    letter-spacing: 1px;
     text-align: center;
-}
-
-.feature_text h1 {
     font-size: 35px;
 }
 
-.feature_text p {
-    line-height: 29px;
-    margin-top: 15px;
-    font-size: 20px;
+/* About Us Section */
+.about-section {
+    width: 100%;
+    height: 65vh;
+    background-color: #f9f9f9;
 }
 
-.home_feature button {
-    letter-spacing: 0.5px;
-    margin-top: 30px;
-    left: 50%;
-    margin-left: -5%;
-}
-
-.cta_select#go {
-    position: absolute;
-    transition: all 0.1s linear 0s;
-    padding: 10px 10px 10px 10px;
-    border: 1px solid white;
-    background: transparent;
-    border-radius: 3px;
-    font-size: 17px;
-    color: white;
-    width: 150px;
-    height: 42px;
-    cursor: pointer;
-    /* IE Support */
-    cursor: hand;
-    z-index: 10;
-}
-
-.cta_select#go:hover {
-    transition: all 0.1s linear 0s;
-    background-color: #00A0DD;
-    border-radius: 3px;
-    color: white;
-    z-index: 10;
-}
-
-/* Video Popup */
-.popup .overlay {
-    position: fixed;
-    top: 0px;
-    left: 0px;
-    width: 100vw;
-    height: 100vh;
-    background: rgba(0,0,0,0.7);
-    z-index: 10000;
-    display: none;
-}
-
-.popup .video_content {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%) scale(0);
-    background: #FFFFFF;
-    width: 750px;
-    height: 450px;
-    z-index: 102;
-    text-align: center;
-    padding: 36px;
-    box-sizing: border-box;
-}
-
-.popup .video_content a {
-    font-size: 17px;
-    color: #4fcdff;
-}
-
-.popup .close_btn {
-    cursor: pointer;
-    /* IE Support */
-    cursor: hand;
-    position: absolute;
-    right: 20px;
-    top: 20px;
-    width: 30px;
-    height: 30px;
-    background: white;
-    color: #222222;
-    font-size: 30px;
-    font-weight: 600;
-    line-height: 30px;
-    text-align: center;
-    border-radius: 50%;
-}
-
-.popup.active .overlay {
+.about-container {
+    width: 100%;
     display: block;
+    margin: auto;
+    padding-top: 100px;
 }
 
-.popup.active .video_content {
-    transition: all 300ms ease-in-out;
-    transform: translate(-50%, -50%) scale(1);
-}
-
-.popup.active .video_content p {
-    font-size: 16px;
-}
-
-/* Service Examples Blurb */
-.blurb-columns {
-    margin-top: 90px;
-    margin-left: -10px;
-}
-
-article.services_blurb {
-    clear: both;
+.content-section {
     float: left;
-    padding-right: 16px;
-    width: 640px;
-    margin: 6px 0px;
+    width: 60%;
 }
 
-.paylo_logo {
-    float: left;
-    margin: 0 10px 0 0;
-    width: 50%;
-}
-
-article.services_blurb h1 {
-    font-size: 26px;
-    color: #00A0DD;
-    margin: 4px 0;
-}
-
-article.services_blurb p {
-    margin: 7px 55px 0px 0px;
-    font-size: 18px;
-    line-height: 23px;
-    line-height: 1.4;
-    color: rgb(88, 88, 88);
-    text-align: justify;
-}
-
-article.paylo_testimony {
+.image-section {
     float: right;
-    width: 300px;
-    margin: 0px 50px;
+    width: 40%
 }
 
-/* Paylo Company Testimony */
-.testimony_wrapper {
-    margin-top: 6px;
-    border: 1px solid #cddbe4;
-    background-color: #FFFFFF;
-    width: 368px;
-    height: 257px;
-}
-
-p.testimony {
-    text-align: center;
-    background: #FFFFFF;
-    color: #1891c0c9;
-    font-style: italic;
-    font-size: 18px;
-    height: 10px;
-    line-height: 22px;
-    border-radius: 5px;
-    padding: 30px 35px;
-}
-
-p.testimony_name {
-    background: #15759bc9;
-    margin-top: 170px;
-    height: 30px;
-    line-height: 30px;
-    font-weight: bold;
-    font-size: 18px;
-    text-align: center;
-    color: #FFFFFF;
-}
-
-/* Services Section */
-.service-columns {
-    padding: 0 2em;
+.image-section img {
+    margin-top: 15px;
+    border: solid 2px #00A0DD;
     width: 100%;
-    display: grid;
-    place-items: center;
-    text-align: center;
+    height: auto;
 }
 
-.section-heading {
-    margin-top: 100px;
-    font-size: 26px;
-    color: rgb(88, 88, 88);
-    padding-bottom: 60px;
+.content-section .header {
+    margin-top: 15px;
+    color: rgb(80, 80, 80);
+    text-transform: uppercase;
+    font-size: 14.2px;
 }
 
-.row {
-    display: flex;
-    flex-wrap: wrap;
+.content-section .content h3 {
+    margin-top: 13px;
+    color: #00A0DD;
+    font-size: 24px;
 }
 
-.column {
-    flex: 0 0 33.33%;
-    max-width: 33.33%;
-    padding: 0 1em 1em 1em;
-    text-align: center;
+.content-section .content p {
+    color: rgb(80, 80, 80);
+    padding-right: 100px;
+    text-align: justify;
+    margin-top: 10px;
+    font-size: 18px;
+    line-height: 1.5;
 }
 
-.card {
-    width: 100%;
-    height: 100%;
-    padding: 2em 1.5em;
-    background: linear-gradient(#ffffff 50%, #2c7bfe 50%);
-    background-size: 100% 200%;
-    background-position: 0 2.5%;
-    border-radius: 5px;
-    box-shadow: 0 0 10px rgba(0,0,0,0.12);
+.about-button {
+    position: absolute;
+    width: 11%;
+    height: 35px;
+    margin-top: 20px;
+    padding-top: 8.2px;
+    left: 0.6rem;
+    background-color: #f9f9f9;
+    color: black;
+    font-size: 16px;
     cursor: pointer;
     /* IE Support */
     cursor: hand;
-    transition: 0.5s;
+    transition: all 0.5s;
+    z-index: 50;
 }
 
-h3 {
-    font-size: 20px;
-    font-weight: 600;
-    color: rgb(40, 40, 40);
-    margin: 0.7em 0;
+.about-button::before {
+    content:"";
+    position: absolute;
+    top: 0;
+    left: -10px;
+    width: 5px;
+    height: 100%;
+    background: #00A0DD;
+    z-index: -1;
+    transition: all 0.5s;
 }
 
-.img-wrapper {
-    position: relative;
-    margin: auto;
-    height: 30vh;
-    padding-top: 10px;
-    width: 97%;
-    margin-bottom: 1.5em;
+.about-button:hover::before {
+    width: 100%;
 }
 
-.cre-img-wrapper {
-    position: relative;
-    margin: auto;
-    height: 30vh;
-    padding-top: 40px;
-    width: 99%;
-    margin-bottom: 1.5em;
+.about-button:hover {
+    color: white;
 }
 
-.lane-img-wrapper {
-    position: relative;
-    margin: auto;
-    height: 30vh;
-    padding-top: 42px;
-    width: 79%;
-    margin-bottom: 1.5em;
+.about-button:active::before {
+    background-color:rgb(80, 80, 80);
 }
 
-.card img {
-    width: 80%;
-    transition: 0.5s;
-}
 
-.card p {
-    color: rgb(88, 88, 88);
-    font-size: 15px;
-    line-height: 1.6;
-    letter-spacing: 0.03em;
-}
-
-.card-button {
-    font-size: 15.5px;
-    background-color: transparent;
-    border: none;
-    padding-top: 1.5em;
-    color: black;
-}
 
 .fa-caret-right {
     font-size: 14px;
     padding-left: 5px;
-    padding-top: 3.5px;
+    padding-top: 3px;
     position: absolute;
 }
 
-.card:hover {
-    background-position: 0 100%;
+/* Our Vision Section */
+
+.our-vision {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 4.5rem 0rem;
+    gap: 2rem;
 }
 
-.card:hover h3 {
-    color: #ffffff;
+.vision-image {
+    flex: 1 1 1rem;
 }
 
-.card:hover p {
-    color: #f0f0f0;
+.vision-image img {
+    width: 350px;
+    align-items: center;
+    padding: 0.4rem;
+    border: 3px solid #00A0DD;
 }
 
-.card:hover button {
-    color: white;
+.vision-content {
+    flex: 1 1 40rem;
+    margin-top: -65px;
 }
 
-.card:hover button:hover {
+.vision-header {
+    padding-left: 60px;
+    font-size: 26px;
+    color: rgb(80, 80, 80);
+    text-transform: uppercase;
+}
+
+.vision-content p {
+    padding-left: 60px;
+    margin-top: 15px;
+    color: rgb(80, 80, 80);
+    text-align: justify;
+    font-size: 18px;
+    line-height: 1.5;
+}
+
+.vision-button {
+    position: absolute;
+    width: 11%;
+    height: 35px;
+    margin-top: 20px;
+    padding-top: 8.2px;
+    left: 28.35rem;
+    background-color: #f9f9f9;
+    color: black;
+    font-size: 16px;
     cursor: pointer;
     /* IE Support */
     cursor: hand;
-    color: rgb(227, 227, 227);
+    transition: all 0.5s;
+    z-index: 50;
 }
 
-/* Equipment Section */
-.equipment-options {
-    width: 100%;
-    display: grid;
-    place-items: center;
-    text-align: center;
-    padding-left: 8em;
-    margin-bottom: 3rem;
-}
-
-.section-two-heading {
-    margin-top: 80px;
-    font-size: 25px;
-    color: rgb(88, 88, 88);
-    padding-bottom: 50px;
-    margin-left: -4.5em;
-}
-
-.equipment-column{
-    flex: 0 0 50%;
-    max-width: 50%;
-    width: 100%;
-    padding: 0 1em 1em 1em;
-    text-align: center;
-}
-
-.equipment-card {
-    position: relative;
-    box-shadow: 0 0 10px rgba(0,0,0,0.12);
-    background-color: white;
-    width: 80%;
+.vision-button::before {
+    content:"";
+    position: absolute;
+    top: 0;
+    left: -10px;
+    width: 5px;
     height: 100%;
+    background: #00A0DD;
+    z-index: -1;
+    transition: all 0.5s;
 }
 
-.header-img {
-    margin: auto;
-    height: 22vh;
+.vision-button:hover::before {
     width: 100%;
 }
 
-.equipment-card img {
+.vision-button:hover {
+    color: white;
+}
+
+.vision-button:active::before {
+    background-color:rgb(80, 80, 80);
+}
+
+/* Icons Section */
+.icons-container {
+    margin-top: -65px;
     width: 100%;
-    transition: 0.5s;
+    height: 70vh;
+    margin-bottom: 50px;
+    padding: 0;
 }
 
-.equipment-card h3 {
-    margin-top: 150px;
+.icons-container h1 {
+    text-align: center;
+    padding-top: 10%;
+    padding-bottom: 16px;
+    margin-bottom: 60px;
+    position: relative;
+    color: rgb(80, 80, 80);
+    text-transform: uppercase;
+    font-size: 2rem;
 }
 
-.equipment-card p {
-    padding: 0 1em 3em 1em;
-    color: rgb(88, 88, 88);
-    font-size: 15px;
-    line-height: 1.6;
-    letter-spacing: 0.03em;
+.icons-container h1::after {
+    content: '';
+    background: #00A0DD;
+    width: 250px;
+    height: 5px;
+    position: absolute;
+    bottom: -5px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.icons-row {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    grid-gap: 30px;
+}
+
+.info {
+    z-index: 50;
+    text-align: center;
+    padding: 25px 10px;
+    border-radius: 5px;
+    font-size: 14px;
+    cursor: pointer;
+    /* IE Support */
+    cursor: hand;
+    background: transparent;
+    transition: transform 0.5s, background-color 0.5s;
+}
+
+.info i {
+    font-size: 40px;
+    margin-bottom: 10px;
+    color: #0e76a8;
+}
+
+.info h2 {
+    font-weight: 600;
+    margin-bottom: 8px;
+}
+
+.info p {
+    color: rgb(80, 80, 80);
+    font-size: 18px;
+    line-height: 1.5;
+}
+
+.info:hover {
+    background: #0e76a8;
+    transform: scale(1.05);
+    color: rgba(255,255,255);
+}
+
+.info:hover i {
+    color: white;
+}
+
+.info:hover p {
+    color: white;
 }
 
 /* Footer */
@@ -864,13 +754,6 @@ h3 {
 
 /* Responsive for Desktop */
 @media only screen and (min-width: 1600px) {
-    .columns-wrapper {
-        width: 1200px;
-    }
-
-    .blurb-wrapper {
-        width: 1150px;
-    }
 
     .normal {
         margin-top: 29px;
@@ -929,35 +812,6 @@ h3 {
 
     .drop-2 li a {
         line-height: 0.02px;
-    }
-
-    article.services_blurb h1 {
-        font-size: 25px;
-    }
-
-    article.services_blurb p {
-        font-size: 21px;
-        margin: 7px 40px 0px 0px;
-    }
-
-    .testimony_wrapper {
-        height: 280px;
-    }
-
-    p.testimony_name {
-        margin-top: 190px;
-    }
-
-    p.testimony {
-        font-size: 20px;
-    }
-
-    .card p {
-        font-size: 17px;
-    }
-
-    .equipment-card p {
-        font-size: 17px;
     }
 
     .footer {
