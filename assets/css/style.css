@@ -967,6 +967,10 @@ h3 {
     .footer-1 {
         margin-top: 3rem;
     }
+
+    article.services_blurb {
+        width: 740px;
+    }
 }
 
 /* Smaller Screen Responsiveness */

@@ -821,6 +821,14 @@ nav ul li:hover ul {
     .footer-1 {
         margin-top: 3rem;
     }
+
+    .icons-container {
+        margin-bottom: 10px;
+    }
+
+    .our-vision {
+        padding: 1.5rem 0rem;
+    }
 }
 
 /* Smaller Screen Responsiveness */
