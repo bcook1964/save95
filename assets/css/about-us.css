@@ -259,7 +259,7 @@ nav ul li:hover ul {
 
 /* Social Sidebar Widget */
 .social-wrapper{
-    width: 100em;
+    width: 0em;
     overflow: hidden;
 }
 
@@ -829,24 +829,6 @@ nav ul li:hover ul {
     .footer-1 {
         margin-top: 3rem;
     }
-
-    .icons-container {
-        margin-bottom: 10px;
-    }
-
-    .our-vision {
-        padding: 1.5rem 0rem;
-    }
-}
-
-@media only screen and (min-width: 1700px) {
-    .icons-container {
-        margin-bottom: 10px;
-    }
-
-    .our-vision {
-        padding: 1.5rem 0rem;
-    }
 }
 
 /* Smaller Screen Responsiveness */
@@ -864,14 +846,6 @@ nav ul li:hover ul {
         left: 35rem;
         width: 23%;
     }
-
-    .icons-container {
-        margin-bottom: 10px;
-    }
-
-    .our-vision {
-        padding: 1.5rem 0rem;
-    }
 }
 
 @media only screen and (max-width: 1505px) and (min-width: 1500px) {
@@ -888,12 +862,20 @@ nav ul li:hover ul {
         left: 35rem;
         width: 23%;
     }
+}
 
-    .icons-container {
-        margin-bottom: 10px;
+@media only screen and (min-height:900px) {
+    .about-section {
+        height: 60vh;
     }
 
+    .icons-container {
+        margin-top: 20px;
+        height: 60vh;
+        margin-bottom: 2rem;
+    }
+    
     .our-vision {
-        padding: 1.5rem 0rem;
+        padding: 0rem 0rem;
     }
 }
