@@ -831,6 +831,16 @@ nav ul li:hover ul {
     }
 }
 
+@media only screen and (min-width: 1700px) {
+    .icons-container {
+        margin-bottom: 10px;
+    }
+
+    .our-vision {
+        padding: 1.5rem 0rem;
+    }
+}
+
 /* Smaller Screen Responsiveness */
 @media only screen and (max-width: 1500px) and (min-width: 1406px) {
     .footer-2 {
@@ -844,14 +854,6 @@ nav ul li:hover ul {
     .drop-2 {
         left: 35rem;
         width: 23%;
-    }
-
-    .icons-container {
-        margin-bottom: 10px;
-    }
-
-    .our-vision {
-        padding: 1.5rem 0rem;
     }
 }
 
@@ -867,13 +869,5 @@ nav ul li:hover ul {
     .drop-2 {
         left: 35rem;
         width: 23%;
-    }
-
-    .icons-container {
-        margin-bottom: 10px;
-    }
-
-    .our-vision {
-        padding: 1.5rem 0rem;
     }
 }
