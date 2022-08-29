@@ -1,0 +1,253 @@
+/* Essentials */
+*{
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+*:focus {
+  outline-style: none;
+  outline: none;
+}
+
+html, body {
+  max-width: 100%;
+  overflow-x: hidden;
+}
+
+ul{
+  list-style: none;
+  padding-inline-start: 0px;
+}
+
+/* Tell Old Browsers to Read HTML5 Elements */
+header, footer, aside, nav, article {
+  display: block;
+}
+
+a{
+  text-decoration: none;
+}
+
+/* Header */
+nav {
+  width: 100%;
+}
+
+.navbar-one {
+  background-color: white;
+  position: fixed;
+  height: 60px;
+  width: 100%;
+  padding-top: 1.5em;
+  padding-left: 50px;
+  font-weight: bold;
+  font-size: 0.82em;
+  letter-spacing: 1px;
+}
+
+.company-info {
+  color: black;
+  position: relative;
+}
+
+.info-item {
+  font-weight: 500;
+  color: black;
+  text-decoration: none;
+  position: relative;
+}
+
+.info-item:hover {
+  color: #00A0DD;
+}
+
+.info {
+  padding-left: 20px;
+  position: relative;
+}
+
+.info2 {
+  padding-left: 15px;
+  color: black;
+  position: relative;
+}
+
+.company-divider {
+  margin-left: 15px;
+  color: black;
+  position: relative;
+}
+
+/* Navbar Images */
+.normal {
+  position: relative;
+  display: none;
+  width: 25%;
+  max-width: 25%;
+  height: 82%;
+  left: 0;
+  cursor: pointer;
+  /* IE Support */
+  cursor: hand;
+}
+
+img.active {
+  position: absolute;
+  display: block;
+  width: 23%;
+  max-width: 23%;
+  height: 75%;
+  left: 0;
+  margin-top: -40px;
+  cursor: pointer;
+  /* IE Support */
+  cursor: hand;
+}
+
+/* Navbar */
+.topnav {
+  margin-left: 90px;
+  margin-top: 0px;
+  position: relative;
+}
+
+.topnav a {
+  color: #f2f2f2;
+  text-decoration: none;
+  font-size: 0.9rem;
+  font-weight: 620;
+  margin-right: 60px;
+  letter-spacing: 1.5px;
+  line-height: 35px;
+}
+
+.topnav a:hover, a:active, a.active {
+  color: lightgrey;
+}
+
+.navbar {
+  position: relative;
+  margin-top: 60px;
+  background-color: transparent;
+  width: 100%;
+  box-shadow: 0px 3px 5px rgba(0 0 0 /10%);
+}
+
+/* Scroll_nav */
+.dark-text{
+    color: rgb(88, 88, 88) !important;
+}
+
+.dark-text:hover, .dark-text:active, .dark-text.active {
+    color:#00A0DD !important;
+}
+
+/* Dropdowns */
+.dropdown:hover .dropdown-menu {
+  display: block;
+  margin-top: 0;
+}
+
+.dropdown-menu {
+  outline: none !important;
+  box-shadow: none !important;
+  border: none !important;
+  border-radius: 4px;
+}
+
+.dropdown-item {
+  color: rgb(88, 88, 88) !important;
+}
+
+.dropdown-item:hover, .dropdown-item.active, .dropdown-item:active {
+  color: #00A0DD !important;
+  background-color: white !important;
+}
+
+.dropdown-item, .dropdown-item:focus {
+  color: #707081;
+  background-color: white !important;
+}
+
+/* Mobile Nav */
+.mobile-menu {
+  padding-left: 20px;
+  padding-bottom: 10px;
+}
+
+.mobileview a {
+  color:rgb(88, 88, 88);
+  text-decoration: none;
+}
+
+.mobileview .nav-item{
+  line-height: 35px;
+}
+
+.mobileview .dropdown-item {
+  line-height: 20px;
+}
+
+.mobileview a:hover, .mobileview a:active, .mobileview a.active {
+  color: #00A0DD;
+}
+
+@media only screen and (max-width: 769px) {
+  .mobileview {
+    margin-top: 60px;
+    width: 100%;
+  }
+
+  .navbar-one {
+    background-color: white;
+    height: 90px;
+    padding-top: 20px;
+    padding-left: 30px;
+    font-weight: bold;
+    font-size: 13px;
+    letter-spacing: 1px;
+  }
+
+  .mobileview .navbar-brand {
+    position: relative;
+    width: 120px;
+  }
+}
+
+@media only screen and (max-width: 418px) {
+  .mobileview {
+    margin-top: 90px;
+    width: 100%;
+  }
+
+  .navbar-one {
+    background-color: white;
+    height: 90px;
+    padding-top: 20px;
+    padding-left: 30px;
+    font-weight: bold;
+    font-size: 13px;
+    letter-spacing: 1px;
+  }
+
+  .info-item {
+    font-weight: 500;
+  }
+    
+  .info {
+    padding-left: 20px;
+  }
+    
+  .info2 {
+    padding-left: 0px;
+    position: absolute;
+    top: 50px;
+  }
+  
+  .company-divider {
+    display: none;
+  }
+}
+/* Mobile Nav End */

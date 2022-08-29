@@ -5,190 +5,300 @@
 
     <!--Viewport Responsive Device-->
     <meta name="Viewport" content="width=device-width", initial-scale="1.0">
-    <meta content="width=device-width, initial-scale=1" name="viewport" />
 
-    <!--CSS stylesheet Links-->
-    <link rel="stylesheet" href="../assets/css/about-us.css">
-    <link rel="stylesheet" href="../assets/css/scroll_nav.css">
+    <!--CSS stylesheets-->
+    <link rel="stylesheet" href="/assets/css/about-us.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
 
     <!--Website Info-->
     <title>About Us - Save95</title>
-    <link rel="shortcut icon" type="image/png" href="../assets/img/Favicon Save Severed.png">
+    <link rel="shortcut icon" type="image/png" href="/assets/images/Favicon Save Severed.png">
 
 </head>
-<body>
 
-    <!-- Header -->
-    <header class="width-100p">
-
-        <section class="navbar-one flex">
-            <div class="left flex">
-                <div class="email">
-                    <span><strong class="empty">Sales:</strong><a href="mailto:bcook@save95.net">bcook@save95.net</a><strong class="divider">|</strong></span>
-                </div>
-                <div class="call">
-                    <span><strong class="empty">Support:</strong><a href="tel:5807067420">(580) 706-7420</a></span>
-                </div>
-            </div>
-        </section>
+<body class="bg-light">
+  <!-- Header -->
+  <header class="width-100p">
+    <div class="container">
+      <section class="navbar-one desktopview fixed-top d-flex justify-content-start">
+        <span class="company-info">Sales: <a class="info-item" href="mailto:bcook@save95.net">bcook@save95.net</a></span>
+        <span class="company-divider">|</span>
+        <span class="info2">Support: <a class="info-item" href="tel:5807067420">(580) 706-7420</a></span>
+      </section>
+    </div>
 
     <!-- Navbar -->
-    <div class="navbar">
-        <div class="navbar" id="navBar">
-            <nav class="topnav container" id="myTopnav">
-                <div class="images" id="images">
-                    <img src="../assets/img/Save Transparent Severed.svg"a href="#" class="active"></a>
-                    <img src="../assets/img/Save Severed.svg"a href="#" class="normal"> </a>
-                </div>
-                <ul>
-                    <li><a href="">Contact Us</a></li>
-                    <li><a class="active" href="#">Company <i class="fas fa-angle-down"></i></a>
-                        <ul class="drop">
-                            <li><a class="active" href="../pages/about-us.html">About Us</a></li>
-                            <li><a href="#">Blog</a></li>
-                            <li><a href="#">Partners</a></li>
-                            <li><a href="#">Social Media</a></li>
-                        </ul> 
-                    </li>
-                    <li><a href="#">Solutions</a></li>
-                    <li><a href="#">Resources<i class="fas fa-angle-down"></i></a>
-                        <ul class="drop-2">
-                            <li><a href="#">Equipment</a></li>
-                            <li><a href="#">Professional Services</a></li>
-                            <li><a href="#">Industries</a></li>
-                        </ul>
-                    </li>
-                    <li><a href="../index.html">Home</a></li>
-                </ul>
-            </nav>
+    <nav style="height: 80px;" class="navbar fixed-top navbar-expand-xxl desktopview" id="navBar">
+      <div class="container">
+        <!-- Company Logo -->
+         <a href="#" class="navbar-brand mb-0 h1">
+          <div class="images" id="images">
+            <img src="/assets/images/Save Transparent Severed.svg"a href="#" class="active"></a>
+            <img src="/assets/images/Save Severed.svg"a href="#" class="normal">
+          </a>
         </div>
+        </a>
+        <button 
+        type="button"
+        data-bs-toggle="collapse"
+        data-bs-target="#navbarNav"
+        class="navbar-toggler"
+        aria-controls="navbarNav"
+        aria-expanded="false"
+        aria-label="Toggle navigation"
+        >
+        <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav w-100 justify-content-center topnav" id="myTopnav">
+            <li class="nav-item">
+              <a href="/index.html">
+                Home
+              </a>
+            </li>
+            <li class="nav-item dropdown">
+              <a href="#" class="dropdown-toggle" id="navbarDropdown" 
+              role="button"
+              aria-expanded="false"
+              >
+                Resources
+              </a>
+              <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                <li><a href="/pages/equipment.html" class="dropdown-item">Equipment</a></li>
+                <li><a href="#" class="dropdown-item">Professional Services</a></li>
+                <li><a href="#" class="dropdown-item">Industries</a></li>
+              </ul>
+            </li>
+            <li class="nav-item">
+              <a href="#" class="">
+                Solutions
+              </a>
+            </li>
+            <li class="nav-item dropdown">
+              <a href="#" class="dropdown-toggle active" id="navbarDropdown"
+              role="button"
+              aria-expanded="false"
+              >
+                Company
+              </a>
+              <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                <li><a href="/pages/about-us.html" class="dropdown-item active">About Us</a></li>
+                <li><a href="#" class="dropdown-item">Blog</a></li>
+                <li><a href="#" class="dropdown-item">Partners</a></li>
+                <li><a href="#" class="dropdown-item">Social Media</a></li>
+              </ul>
+            </li>
+            <li class="nav-item">
+              <a href="#" class="">
+                Contact Us
+              </a>
+            </li>
+          </ul>
+        </div>
+
+      </div><!-- .container -->
+    </nav>
+
+    <!-- MOBILE HEADER -->
+    <div class="container smallview" id="smallview">
+      <section class="navbar-one fixed-top d-flex justify-content-start smallview">
+        <span class="company-info smallview">Sales: <a class="info-item" href="mailto:bcook@save95.net">bcook@save95.net</a></span>
+        <span class="company-divider">|</span>
+        <span class="info2 smallview">Support: <a class="info-item" href="tel:5807067420">(580) 706-7420</a></span>
+      </section>
     </div>
 
-</header>
-<!-- Header End -->
+    <!-- MOBILE NAVBAR -->
+    <nav style="height:80px;" class="navbar fixed-top navbar-expand-xxl navbar-light bg-light mobileview" id="mobile">
+      <div class="container">
+        <!-- Company Logo -->
+         <a href="#" class="navbar-brand mb-0 h1 mobileview">
+          <img class="d-inline-block align-top position-relative" src="/assets/images/Save Severed.svg" width="120" height="60"/>
+        </a>
+        <button 
+        type="button"
+        data-bs-toggle="collapse"
+        data-bs-target="#navbarNav"
+        class="navbar-toggler"
+        aria-controls="navbarNav"
+        aria-expanded="false"
+        aria-label="Toggle navigation"
+        >
+        <span style="z-index: 100002;" class="navbar-toggler-icon"></span>
+        </button>
+        </div>
+        <div class="collapse navbar-collapse bg-light mobile-menu" id="navbarNav">
+          <ul class="navbar-nav">
+            <li class="nav-item active">
+              <a href="/index.html">
+                Home
+              </a>
+            </li>
+            <li class="nav-item dropdown">
+              <a href="#" class="dropdown-toggle" id="navbarDropdown" 
+              role="button"
+              aria-expanded="false"
+              data-bs-toggle="dropdown"
+              >
+                Resources
+              </a>
+              <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                <li><a href="/pages/equipment.html" class="dropdown-item">Equipment</a></li>
+                <li><a href="#" class="dropdown-item">Professional Services</a></li>
+                <li><a href="#" class="dropdown-item">Industries</a></li>
+              </ul>
+            </li>
+            <li class="nav-item">
+              <a href="#" class="">
+                Solutions
+              </a>
+            </li>
+            <li class="nav-item dropdown">
+              <a href="#" class="dropdown-toggle active" id="navbarDropdown"
+              role="button"
+              aria-expanded="false"
+              data-bs-toggle="dropdown"
+              >
+                Company
+              </a>
+              <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                <li><a href="/pages/about-us.html" class="dropdown-item active">About Us</a></li>
+                <li><a href="#" class="dropdown-item">Blog</a></li>
+                <li><a href="#" class="dropdown-item">Partners</a></li>
+                <li><a href="#" class="dropdown-item">Social Media</a></li>
+              </ul>
+            </li>
+            <li class="nav-item">
+              <a href="#" class="">
+                Contact Us
+              </a>
+            </li>
+          </ul>
+        </div>
+        <!-- END MOBILE NAVBAR -->
+    </nav>
 
-<!--Social Sidebar Widget-->
-<div class="social-wrapper">
-    <nav class="social">
-        <ul>
-           <li><a href="#"><i class="fab fa-facebook"></i></a></li>
-           <li><a href="#"><i class="fab fa-youtube"></i></a></li>
-           <li><a href="#"><i class="fab fa-linkedin"></i></a></li>
+    <!--Social Sidebar Widget-->
+    <div class="container social-wrapper">
+      <div class="social">
+        <ul class="social-list">
+          <li><a href="#"><i class="fab fa-facebook"></i></a></li>
+          <li><a href="#"><i class="fab fa-youtube"></i></a></li>
+          <li><a href="#"><i class="fab fa-linkedin"></i></a></li>
         </ul>
-     </nav>
-</div><!--.social-wrapper-->
-
-<body>
-
-    <!--Resources Feature-->
-    <section class="resources_feature">
-    <div class="wrapper">
-
-        <!--Intro Section Text-->
-        <article class="feature_text">
-            <h1>We Help Small Businesses Think Big</h1>
-        </article>
-    </section>
-
-    </div><!--.wrapper-->
-
-    <!--About Us Section-->
-    <div class="wrapper">
-        
-        <div class="about-section">
-            <div class="about-container">
-                <div class="content-section">
-                    <div class="header">
-                        <h1>About Us</h1>
-                    </div>
-                    <div class="content">
-                        <h3>Empowering Others Through Payments</h3>
-                        <p>Save95 and its partners are committed to making it as easy as possible for you to grow your business through innovations in credit card processing, ecommerce, mobile payments, back-end business solutions, and more. We understand that in managing your money, we are also managing your lives, and strive every day to provide the dedicated service and protection needed to make credit card processing the least stressful part of your day.</p>
-                        <div class="about-button">Read More<i class="fas fa-caret-right"></i></div>
-                    </div>
-                </div>
-                <div class="image-section">
-                    <img src="../assets/img/img-about/fl43352955901-public-image-konq6m6d.jpg">
-                </div>
-            </div>
-        </div>
-
-    </div><!--.wrapper-->
-
-    <!--Our Vision Section-->
-    <div class="wrapper">
-
-        <div class="our-vision">
-        <div class="vision-image">
-            <img src="../assets/img/img-about/streamlinehq-designer-giving-a-keynote-2-brooklyn-999.PNG">
-        </div>
-        <div class="vision-content">
-            <h3 class="vision-header">Our vision and mission</h3>
-            <p>We're here to support independent business owners and take one more worry off their back—by accepting payments, consulting on business solutions, and providing great customer service. We offer payment expertise, so you can focus on running and expanding your business, while increasing your revenue potential and empowering your customers to do business with you. Save95 is the innovative, secure, and global partner for your payment processing needs, whether you do business online, mobile, or in-person.</p>
-            <div class="vision-button">Read More<i class="fas fa-caret-right"></i></div>
-        </div>
-        </div>
-
-    </div><!--.wrapper-->
-
-    <div class="wrapper">
-
-        <!--Icons Section-->
-        <div class="icons-container">
-            <h1>Why Choose Save95?</h1>
-            <div class="icons-row">
-                <div class="info">
-                    <i class="fa-regular fa-credit-card"></i>
-                    <h2>Financially Strong</h2>
-                    <p>Begin growing your sales by having the capability to accept payments beyond a traditional brick-and-mortar.</p>
-                </div>
-                <div class="info">
-                    <i class="fa-regular fa-chart-bar"></i>
-                    <h2>Smart Marketing</h2>
-                    <p>At Save95, you'll find a formidable, forward-thinking ally who makes your business—and its success—the top priority.</p>
-                </div>
-                <div class="info">
-                    <i class="fa-regular fa-id-badge"></i>
-                    <h2>Advanced Security</h2>
-                    <p>Take payments confidently as our mobile solutions contain the latest security features so you can begin anywhere.</p>
-                </div>
-            </div>
-        </div>
-
-    </div><!--.wrapper-->
-
-    <div class="footer-container">
-        <div class="footer">
-            <div class="footer-start footer-1">
-                <img class="footer-logo" src="../assets/img/Save Transparent Severed.svg">
-                <h4>A Better Way to Process Payments.</h4>
-                <h4 class="web-link">www.save95.net</h4>
-            </div>
-            <div class="footer-heading footer-2">
-                <h2>Resources</h2>
-                <a href="#">Equipment</a>
-                <a href="#">Professional Services</a>
-                <a href="#">Industries</a>
-            </div>
-            <div class="footer-heading footer-3">
-                <h2>Company</h2>
-                <a href="../pages/about-us.html">About Us</a>
-                <a href="#">Blog</a>
-                <a href="#">Partners</a>
-                <a href="#">Social Media</a>
-            </div>
-            <div class="footer-email-form">
-                <h2>Join our Newsletter</h2>
-                <input type="email" placeholder="Enter your email address" id="footer-email">
-                <input type="submit"  value="Sign Up" id="footer-email-btn">
-            </div>
-        </div>
+      </div>
     </div>
 
-    <!--Scripts Here-->
-    <script src="../assets/js/scroll_nav.js"></script>
-    <script src="https://kit.fontawesome.com/e0ad82ca79.js" crossorigin="anonymous"></script>
-    <!--Scripts End-->
-    
+  </header>
+  <!-- Header End -->
+
+  <!-- Page Feature -->
+  <section style="background-image: url(/assets/images/img-about/istockphoto-1351756759-170667a.jpg);" class="text-light p-5 text-center page-feature">
+    <div class="container about-text">
+      <h2> We Help Small Businesses Think Big </h2>
+    </div>
+  </section>
+
+  <!-- About Section -->
+  <div class="container">
+    <div class="about-row gx-0 row">
+      <div class="content-column col-xl-6">
+        <h3>About Us</h3>
+        <h5>Empowering Others Through Payments</h5>
+        <p class="h6">Save95 and its partners are committed to making it as easy as possible for you to grow your business through innovations in credit card processing, ecommerce, mobile payments, back-end business solutions, and more. We understand that in managing your money, we are also managing your lives, and strive every day to provide the dedicated service and protection needed to make credit card processing the least stressful part of your day.</p>
+        <div class="more-button">
+          <div class="about-button">Read More<i class="fas fa-caret-right"></i></div>
+        </div>
+      </div>
+      <div class="image-column col-xl-4">
+        <img src="/assets/images/img-about/fl43352955901-public-image-konq6m6d.jpg">
+      </div>
+    </div>
+  </div><!-- .container -->
+
+  <!--Our Vision Section-->
+  <div class="container">
+    <div class="vision-row row">
+      <div class="vision-img col-xl-4">
+        <img src="/assets/images/img-about/streamlinehq-designer-giving-a-keynote-2-brooklyn-999.PNG">
+      </div>
+      <div class="vision-column col-xl">
+        <h3 class="vision-header">Our vision and mission</h3>
+        <p>We're here to support independent business owners and take one more worry off their back—by accepting payments, consulting on business solutions, and providing great customer service. We offer payment expertise, so you can focus on running and expanding your business, while increasing your revenue potential and empowering your customers to do business with you. Save95 is the innovative, secure, and global partner for your payment processing needs, whether you do business online, mobile, or in-person.</p>
+        <div class="more-button">
+          <div class="about-button">Read More<i class="fas fa-caret-right"></i></div>
+        </div>
+      </div>
+    </div>
+  </div><!-- .container -->
+
+  <!-- Icons Section -->
+  <div class="container">
+    <div class="header-row row">
+      <h2>Why Choose Save95?</h2>
+    </div>
+    <div class="icons-row row">
+      <div class="info-column col-xl">
+        <i class="fa-regular fa-credit-card"></i>
+        <h4>Financially Strong</h4>
+        <p>Begin growing your sales by having the capability to accept payments beyond a traditional brick-and-mortar.</p>
+      </div>
+      <div class="info-column col-xl">
+        <i class="fa-regular fa-chart-bar"></i>
+        <h4>Smart Marketing</h4>
+        <p>At Save95, you'll find a formidable, forward-thinking ally who makes your business—and its success—the top priority.</p>
+      </div>
+      <div class="info-column col-xl">
+        <i class="fa-regular fa-id-badge"></i>
+        <h4>Advanced Security</h4>
+        <p>Take payments confidently as our mobile solutions contain the latest security features so you can begin anywhere.</p>
+      </div>
+    </div>
+  </div><!-- .container -->
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-row row">
+        <div class="footer-1 col-xl">
+          <img class="footer-logo" src="/assets/images/Save Transparent Severed.svg">
+          <h6>A Better Way to Process Payments.</h6>
+          <h6 class="web-link">www.save95.net</h6>
+        </div>
+        <div class="footer-2 col-xl">
+          <h4>Resources</h4>
+          <a href="/pages/equipment.html">Equipment</a>
+          <a href="#">Professional Services</a>
+          <a href="#">Industries</a>
+        </div>
+        <div class="footer-3 col-xl">
+          <h4>Company</h4>
+          <a href="/pages/about-us.html">About Us</a>
+          <a href="#">Blog</a>
+          <a href="#">Partners</a>
+          <a href="#">Social Media</a>
+        </div>
+        <div class="footer-email-form col-xl">
+          <h4>Join our Newsletter</h4>
+          <input type="email" placeholder="Enter your email address" id="footer-email">
+          <input type="submit"  value="Sign Up" id="footer-email-btn">
+        </div>
+      </div>
+    </div>
+  </footer>
+  <!-- Footer End -->
+
+   <!-- Scripts -->
+  <script 
+    src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa" crossorigin="anonymous">
+  </script>
+  <script
+    src="https://code.jquery.com/jquery-3.6.0.min.js"
+    integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="
+    crossorigin="anonymous">
+  </script>
+  <script src="https://kit.fontawesome.com/e0ad82ca79.js" crossorigin="anonymous"></script>
+  <script src="/assets/scripts/navbar.js"></script>
+ <!-- Scripts End -->
 </body>
 </html>
